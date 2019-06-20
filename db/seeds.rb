@@ -1,3 +1,8 @@
+url = 'https://unsplash.com/photos/lwoTuByIuC4'
+cocktail = Cocktail.new(name: 'Campari Orange')
+cocktail.remote_photo_url = url
+cocktail.save
+
 require 'json'
 require 'open-uri'
 
@@ -16,9 +21,6 @@ Ingredient.create(name: 'lemon')
 Ingredient.create(name: 'ice')
 Ingredient.create(name: 'mint leaves')
 
-url = 'https://unsplash.com/photos/lwoTuByIuC4'
-cocktail = Cocktail.new(name: 'Campari Orange')
-cocktail.remote_photo_url = url
-cocktail.save
+
 
 puts 'done'
