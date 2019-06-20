@@ -1,8 +1,16 @@
-<h1 class="text-center">Create a new Cocktail</h1>
+    <div class="wrap">
+  <div class="head-create">
+    <h1 class="text-center">Create a new cocktail</h1>
+    <p class="text-center">You can add the ingredients after you created your cocktail.</p>
+  </div>
 
-<div class="container">
-  <%= simple_form_for @cocktail do |f| %>
-    <%= f.input :name %>
-    <%= f.submit "Add a Cocktail", class: "btn btn-warning" %>
-  <% end %>
+  <div class="main-create">
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.input :photo %>
+      <%= f.input :photo_cache, as: :hidden %>
+      <%= f.submit "Add a Cocktail", class: "btn btn-warning" %>
+    <% end %>
+  </div>
 </div>
+

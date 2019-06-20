@@ -15,17 +15,40 @@
   justify-content: center;
   margin-bottom: 40px;
   font-family: 'Spectral SC', serif;
-}
-.banner h1 {
-  font-size: 50px;
-  font-weight: bold;
-  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
-  color: rgb(250,250,250);
-}
-.banner p {
+  position: relative;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    color: rgb(250,250,250);
+  }
+  p {
   font-size: 25px;
   font-weight: lighter;
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
+  }
+  a {
+    font-size: 12px;
+  }
+}
+
+.banner-button {
+  position: absolute;
+  top: 45px;
+  right: 147px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+  }
+  &:hover {
+    background-color: white;
+    color: transparent;
+  }
+
 }

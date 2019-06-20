@@ -1,20 +1,21 @@
 <div class="banner" style="background-image: linear-gradient(-225deg, rgba(200,101,80,0.6) 0%, rgba(13, 9, 16, 0.72) 50%), url(<%= image_path "bar.jpg" %>)">
 
   <div class="banner-content">
+    <div class="banner-button">
+      <%= link_to "Create a new Cocktail", new_cocktail_path %>
+    </div>
     <h1>Our Cocktails</h1>
     <p>Find and create delicious cocktails...</p>
    <!--  <%# link_to "Go drinking", cocktail_path(@cocktails.sample), class: "btn btn-outline-danger btn-lg" %> -->
   </div>
 </div>
 
-
 <div class="main-overview">
-  <h3>Check out our cocktails</h3>
   <div class="container">
     <div class="row">
       <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path "cocktail_"+cocktail.name+".jpg" %>);">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= cl_image_path cocktail.photo %>);">
             <div class="card-description">
               <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
               <%= link_to "Delete me", cocktail_path(cocktail), method: :delete, data: {:confirm =>"Are you sure?"}  %>
@@ -26,4 +27,4 @@
   </div>
 </div>
 
-<%= link_to "Create a new Cocktail", new_cocktail_path  %>
+
