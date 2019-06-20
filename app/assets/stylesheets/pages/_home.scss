@@ -1,1 +1,18 @@
 // Specific CSS for your home-page
+$darkred: #8B0000;
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.main-index {
+  background-color: rgb(230,230,230);
+  padding-top: 20px;
+  h3 {
+    font-family: 'Spectral SC', serif;
+    color: #510D0A;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $darkred;
+  }
+}

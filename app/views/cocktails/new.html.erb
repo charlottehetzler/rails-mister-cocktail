@@ -1,4 +1,4 @@
-    <div class="wrap">
+  <div class="wrap">
   <div class="head-create">
     <h1 class="text-center">Create a new cocktail</h1>
     <p class="text-center">You can add the ingredients after you created your cocktail.</p>
@@ -7,9 +7,9 @@
   <div class="main-create">
     <%= simple_form_for(@cocktail) do |f| %>
       <%= f.input :name %>
-      <%= f.input :photo %>
+      <%= f.input :photo, class: "input-button" %>
       <%= f.input :photo_cache, as: :hidden %>
-      <%= f.submit "Add a Cocktail", class: "btn btn-warning" %>
+      <%= f.submit "Add a Cocktail", class: "form-button" %>
     <% end %>
   </div>
 </div>

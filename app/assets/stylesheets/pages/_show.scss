@@ -1,0 +1,76 @@
+$darkred: #8B0000;
+$beige: #F5F5DC;
+
+.delete-ing {
+  border-radius: 50%;
+  width: 10px;
+  margin-left: 20px;
+  text-align: right;
+  font-size: 10px;
+}
+
+.main-show {
+  padding: 0 10%;
+}
+
+
+.form-ing {
+  text-size: 1px;
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  color: $darkred;
+  margin-bottom: 20px;
+}
+
+
+.form-control-file, {
+  background: transparent;
+  color: $darkred;
+  border-radius: 4px;
+}
+
+.ingredients-body {
+  ul {
+    list-style-type: none;
+    border-bottom: 1px solid $darkred;
+    font-size: 20px;
+    margin-bottom: 100px;
+    padding-bottom: 50px;
+  }
+  a {
+    text-decoration: none;
+    color: $darkred;
+  }
+}
+
+.banner-drink {
+  padding: 0px 20px;
+
+  h1{
+    color: $beige;
+  }
+}
+
+.goback-button {
+  position: absolute;
+  top: 45px;
+  left: 147px;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  background-color: transparent;
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    }
+    &:hover {
+    background-color: white;
+    opacity: 0.7;
+    }
+    a:hover {
+      color: black;
+    }
+}

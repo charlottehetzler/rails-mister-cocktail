@@ -1,0 +1,18 @@
+$darkred: #8B0000;
+
+.main-create {
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid $darkred;
+}
+
+.form-button {
+  background-color: $darkred;
+  color: white;
+  border-radius: 4px;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+}
+
+.wrap {
+  padding: 0 20%;
+}
