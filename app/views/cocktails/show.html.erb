@@ -19,7 +19,7 @@
       <li>
         <p>
           <%= dose.description %> of <%= dose.ingredient.name %> <%= link_to cocktail_dose_path(@cocktail, dose) %>
-          <%= image_tag 'delete.png', dose_path(dose), method: :delete, data: {:confirm =>"Are you sure?"}, class: "delete-ing" %>
+          <%= image_tag "x", dose_path(dose), method: :delete, data: {:confirm =>"Are you sure?"}, class: "delete-ing" %>
           <% end %>
         </p>
       </li>
