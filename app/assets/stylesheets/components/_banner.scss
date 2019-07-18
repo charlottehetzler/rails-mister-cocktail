@@ -4,18 +4,20 @@
 //   background-size: cover;
 // }
 
+$darkred: #8B0000;
+
 .banner {
   color: white;
   text-align: center;
-  height: 60vh;
-  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  height: 80vh !important;
   background-size: cover !important;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  font-family: 'Spectral SC', serif;
+  font-family: 'Helvetica', serif;
   position: relative;
+  letter-spacing: 3px;
   h1 {
     font-size: 50px;
     font-weight: bold;
@@ -28,6 +30,9 @@
   color: rgb(255, 255, 255);
   opacity: 0.6;
   margin-bottom: 30px;
+  font-family: "Helvetica", "sans-serif";
+  font-weight: lighter;
+  letter-spacing: 3px;
   }
   a {
     font-size: 12px;
@@ -49,14 +54,37 @@
     color: white;
     text-decoration: none;
     padding: 7px;
+    letter-spacing: 1px;
     }
     &:hover {
     background-color: white;
     opacity: 0.7;
     }
     a:hover {
-      color: black;
+      color: $darkred;
     }
+}
+
+.go-drinking {
+  border: 1px solid $darkred;
+  border-radius: 4px;
+  background-color: $darkred;
+  opacity: 0.8;
+  width: 150px;
+  padding: 7px;
+  font-family: "Raleway", "Helvetica", "sans-serif";
+  margin-left: 168px;
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+  }
+  a:hover {
+    font-size: 20px;
+    font-family: "Helvetica", "sans-serif";
+  }
 }
 
 

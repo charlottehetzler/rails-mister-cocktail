@@ -4,9 +4,11 @@
     <div class="banner-button">
       <%= link_to "Create a new Cocktail", new_cocktail_path %>
     </div>
-    <h1>Our Cocktails</h1>
+    <h1>Charlys Cocktails</h1>
     <p>Find and create delicious cocktails...</p>
-   <!--  <%# link_to "Go drinking", cocktail_path(@cocktails.sample), class: "btn btn-outline-danger btn-lg" %> -->
+    <div class="go-drinking">
+      <%= link_to "Go drinking", cocktail_path(@cocktails.sample)%>
+    </div>
   </div>
 </div>
 
